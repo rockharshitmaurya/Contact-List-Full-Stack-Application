@@ -6,7 +6,7 @@ import ToastContext from "../context/ToastContext";
 import "./css/login-register.css";
 
 const EditContact = () => {
-  const URL="http://localhost:8000";
+  const URL="https://contact-go.onrender.com";
   const { id } = useParams();
   const navigate = useNavigate();
 

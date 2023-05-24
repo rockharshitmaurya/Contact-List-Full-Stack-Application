@@ -5,7 +5,7 @@ import ToastContext from "../context/ToastContext";
 import "./css/login-register.css";
 
 const CreateContact = () => {
-  const URL="http://localhost:8000";
+  const URL="https://contact-go.onrender.com";
   const { user } = useContext(AuthContext);
   const { toast } = useContext(ToastContext);
 

@@ -5,7 +5,7 @@ import Spinner from "../components/Spinner";
 import ToastContext from "../context/ToastContext";
 
 const AllContact = () => {
-  const URL="http://localhost:8000";
+  const URL="https://contact-go.onrender.com";
   const { toast } = useContext(ToastContext);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -38,7 +38,7 @@ const AllContact = () => {
   const deleteContact = async (id) => {
     if (window.confirm("are you sure you want to delete this contact ?")) {
       try {
-        const res = await fetch(`/api/delete/${id}`, {
+        const res = await fetch(`${URL}/api/delete/${id}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
